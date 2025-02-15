@@ -1,0 +1,267 @@
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f7f9fc; /* Light, neutral background */
+}
+
+/* Global */
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 30px auto;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center;
+}
+
+.container1{
+  display: flex;
+  margin-left: 10%;
+}
+
+.container1 div h1{
+  font-size: 2em;
+}
+
+.highlight{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 2em;
+}
+
+.container1 nav{
+  margin-left: 25%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.button_1 {
+  height: 38px;
+  background: #0077b6; /* Bright, modern blue */
+  border: 0;
+  padding: 0 20px;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button_1:hover {
+  background: #005f86; /* Darker blue for hover effect */
+}
+
+.dark {
+  padding: 10%;
+  background: #2b2d42; /* Dark, professional background */
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Header */
+header {
+  background: #14213d; /* Deep navy blue */
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #fca311 3px solid; /* Warm yellow for contrast */
+}
+
+a {
+  color: #fca311; /* Matching yellow for links */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li {
+  display: inline;
+  padding: 20px;
+}
+
+header #branding h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+a:hover {
+  color: #e5e5e5; /* Slightly lighter shade on hover */
+  font-weight: bold;
+}
+
+/* Showcase */
+#showcase {
+  min-height: 400px;
+  background: linear-gradient(to bottom, #0077b6, #005f86); /* Modern gradient */
+  text-align: center;
+  color: #ffffff;
+}
+
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+/* Newsletter */
+#newsletter {
+  padding: 15px;
+  color: #ffffff;
+  background: #14213d; /* Matches header for consistency */
+}
+
+#newsletter h1 {
+  float: left;
+}
+
+#newsletter form {
+  margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+/* Boxes */
+#boxes {
+  margin-top: 20px;
+}
+
+#boxes .box {
+  padding: 10px;
+  background: #ffffff; /* Clean, white background */
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#boxes .box img {
+  width: 90px;
+}
+ol{
+  text-align: left;
+  margin-left: 15%;
+}
+
+/* Sidebar */
+aside#sidebar {
+  margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea {
+  width: 90%;
+  padding: 5px;
+}
+
+
+/* Services */
+ul#services li {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #e9ecef; /* Soft gray background */
+}
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #14213d; /* Consistent deep navy blue */
+  text-align: center;
+}
+
+/* Form Elements */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555; /* Dark gray for labels */
+}
+
+form input, form select {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form input[type="submit"] {
+  background-color: #fca311; /* Warm yellow */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #e59400; /* Slightly darker yellow for hover effect */
+}
+
+/* Media Queries */
+/* @media (max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  #showcase h1 {
+    margin-top: 40px;
+  }
+
+  #newsletter button, .quote button {
+    display: block;
+    width: 100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+} */
