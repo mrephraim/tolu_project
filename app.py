@@ -11,11 +11,11 @@ scaler = joblib.load("scaler.joblib")
 
 # Biomarker mapping
 BIOMARKER_MAP = {
-    1: "EGFR",
-    2: "ALK",
-    3: "KRAS",
-    4: "TP53",
-    5: "ROS1"
+    1: "bTMB",
+    2: "EGFR",
+    3: "ALK",
+    4: "CFDNA",
+    5: "ESO"
 }
 
 # Expected feature order

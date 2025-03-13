@@ -204,8 +204,8 @@
 
           let result = await response.json();
           document.getElementById("prediction_result").innerHTML = `
-            <div style="font-size: 20px; font-weight: bold;">Lung Cancer Prediction: ${result.lung_cancer_status}</div>
-            <div style="margin-top: 5px; font-size: 16px; color: #555;">
+            <div style="font-size: 20px; font-weight: 500;">Lung Cancer Prediction: ${result.lung_cancer_status}</div>
+            <div style="margin-top: 5px;  font-weight: 500; font-size: 17px; color: #555;">
                 Possibly associated Biomarker: ${result.biomarker}
             </div>
         `;
